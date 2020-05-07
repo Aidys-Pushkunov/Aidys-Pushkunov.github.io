@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="altai_shatra.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Altai Shatra</title>
+</head>
+<body>
+	<header>
+	    <div class="header_block">
+        	<img class="logo" src="Altai_Shatra-logo.png">
+        	<div class="menu">
+        		<ul>       
+        	     	<li><a href="#">Главное</a></li> 
+        			<li><a href="site_page2.html">Правила игры</a></li>	  
+        			<li><a href="site_page3.html">Комбинации</a></li>
+        		</ul>
+        	</div>
+        </div>
+	
+	</header>
+
+	<hr>
+		<div class="block">
+			<article>
+				<p><a href="#AltayShatra">Алтай Шатра</a></p><hr>
+				<p><a href="#history">История</a></p><hr>
+				<p><a href="#devolop">Разработчик компьютерной версии игры</a></p><hr>
+				<p><a href="#site_shatra">Алтай шатра в сайте для настольных игр</a></p>
+			</article>
+			<main>
+				<h1><a  name="AltayShatra">Алтай Шатра</a></h1>
+				<p>В Республике Алтай, особой популярностью пользуется игра "Алтай Шатра" (алтайские шашки/шахматы). Эта своеобразная игра, которая развивает абстрактное мыщление, внимательность, и ум. По моему мнению, эта игра достойна особого внимания. В настоящий момент любителей этой игры становится все больше и больше. </p>
+				<p>В основе игры лежит образное представление войн. В игре присутствует: шибе(крепость), бий(король), баатыр(богатырь), шатра(пешка). Из-за своеобразной доски в игре очень часто встречаются блестящие комбинации.</p>
+				 <img src="shatra_dosk.jpg"><hr>
+				<h2><a name="history">История</a></h2>
+				<p>Является древним народным интеллектуальным видом спорта алтайцев. Данный вид шашек был воссоздан на Алтае в 1970—1980-е годы. Правила игры были разработаны при участии специалистов из Горно-Алтайского научно-исследовательского института истории, языка и литературы и опубликованы в областной газете «Звезда Алтая» и в некоторых районных газетах <hr></p>
+			
+		        
+				<h3> <a name="devolop">Разработчик компьютерной версии игры</a></h3>
+				<p>Программу под Windows для игры в алтайские шашки написал Фрэнсис Монкман в 2000 году.</p>
+				
+				<div class="slider_site">
+				   
+				    	<button onclick="prev()">Prev</button>
+				  
+				        <img id="slider" src="devoloper_shatra_game.jpg" width="300px" height="200px">
+				   
+				    	<button onclick="next()">Next</button>
+
+				</div>
+
+				<hr>
+				<h3><a name="site_shatra">Алтай шатра в сайте для настольных игр</a></h3>
+                <p>Сайт <a href="#">Abstract Games</a> включил в себя игру Алтай Шатра и по сей день проводяться онлайн турниры по этой игре на этом сайте. </p>
+
+                <a class="back_to_top" title="Наверх">↑</a>
+
+			</main>
+		</div>
+	<footer>
+		<div class="margin_footer">&copy;Все права защищены авторским правом
+		<div class = "footer_link">
+			<a href="#">Pushkunv Aidys</a>
+		</div></div>
+	</footer>
+    <script type="text/javascript">
+    	let image = ["devoloper_shatra_game.jpg", "image/IMG_2.JPG", "IMG_3.JPG", "IMG_4.JPG"];
+        
+        let num = 0;
+
+        function next() {
+        	let slider = document.getElementById("slider");
+        	num++;
+        	if (num >= image.length) {
+        		num = 0;
+        	}
+        	slider.src = image[num];
+        }
+
+        function prev() {
+        	let slider = document.getElementById("slider");
+        	num--;
+        	if(num < 0) {
+        		num = image.length-1;
+        	}
+        	slider.src = image[num];
+        }
+
+    </script>
+    <script type="text/javascript" src="function.js"></script>
+
+    
+</body>
+</html>

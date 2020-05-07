@@ -1,0 +1,174 @@
+body {
+	font-family: Arial;
+}
+
+p {
+	padding: 10px 20px;
+	letter-spacing: 0.9px;
+}
+
+.avtor {
+	text-align: right;
+	margin-right: 45px;
+}
+
+img {
+	margin: 20px;
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+	padding: 20px 40px 5px 40px;
+}
+
+/*HEADER*/
+
+header {
+	clear: both;
+	margin-left: auto;
+	margin-left: auto;
+	
+    background-color: #ffffff;
+}
+
+.header_block {
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1350px;
+
+}
+
+.logo {
+	padding-left: 25px; 
+	width: 190px;
+	height: 65px;	
+}
+
+/*menu*/
+
+.menu li {
+	display: inline;
+	border: 1px solid black;
+	padding: 5px;
+	background-color: black;
+	color: white;	
+	float: left;
+}
+
+.menu li:hover {
+	transition: .3s;
+    color: black;
+	background-color: white;
+} 
+
+li a {
+	color: white;
+	text-decoration: none;
+
+}
+
+li a:hover {
+	color: black;
+}
+
+.menu {
+	direction: none;
+    display: inline-block;
+    margin-left: 50%;
+ 
+}
+
+/*ARTICLE*/
+
+article {
+	float: left;
+	min-height: 40%;
+	border: 0.1px solid black;
+	margin: 5px 0.1% 5px 0px;
+	width: 25%;
+	word-wrap: break-word;
+	background-color: #f6f6f6;
+}
+
+/*MAIN*/
+
+main {
+	float: right;
+
+	min-height: 40%;
+	width: 70%;
+	margin: 5px 0px 5px 0.1%;
+	word-wrap: break-word;
+	background-color: #ffffff;
+	border: 0.1px solid black;
+
+}
+
+
+
+/*FOOTER*/
+
+footer {
+	background-color: #262626;
+	clear: both;
+	margin-left: auto;
+	margin-left: auto;
+	border: 1px solid black;
+	text-align: center;
+	color: white;
+	height: 200px;
+}
+
+.footer_link a {
+	color: white;
+	text-decoration: none;
+
+}
+
+.margin_footer {
+	margin-top: 25px;
+}
+
+/*block footer and header*/
+
+.block {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1350px;
+}
+
+/* slider */
+
+.slider_site {
+	text-align: center;
+}
+
+/* button top */
+
+.back_to_top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  background: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+.back_to_top:hover {
+  background: #e9ebec;
+}
+
+.back_to_top-show {
+  display: block;
+}
+
+
+
